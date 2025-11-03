@@ -29,9 +29,8 @@
                             Clínica Veterinária Vida Animal
                         </font>    
                     </h1>                               
-                    <img src="dog.png" alt="Desenho de um cachorrinho" width="150">
-                    <img src="cat.png" alt="Desenho de um gatinho" width="150">
-                
+                    <img src="whatsApp.png" alt="Símbolo do WhatsApp" width="160">
+                    <img src="email.png" alt="Desenho de uma carta" width="150">
             </div>
     
             <div class="content">
@@ -44,10 +43,10 @@
         <fieldset>
             <legend>Dados do tutor</legend>
             <div class="row">
-                <label>Nome:</label>
-                <input type="text"></input>
-                <label>E-mail:</label>
-                <input type="email"></input>
+                <label>Nome*:</label>
+                <input type="text" required></input>
+                <label>E-mail*:</label>
+                <input type="email" required></input>
             </div>
             <div class="row">
                 <label>Telefone:</label>
@@ -59,10 +58,10 @@
         <fieldset>
             <legend>Dados do pet</legend>
             <div class="row">
-                <label>Nome:</label>
-                <input type="text"></input>
-                <label>Espécie:</label>
-                <select>
+                <label>Nome*:</label>
+                <input type="text" required></input>
+                <label>Espécie*:</label>
+                <select required>
                     <option value="" disabled selected> Selecione a espécie</option>
                     <option value="cachorro" > Cachorro</option>
                     <option value="gato" > Gato</option>
@@ -70,31 +69,21 @@
                 </select>
             </div>
             <div class="row">
-                <label>Bairro:</label>
-                <input type="text"></input>
-                <label>Cidade/UF:</label>
+                <label>Raça (opcional):</label>
                 <input type="text"></input>
             </div>
         </fieldset>
         <fieldset>
-            <legend>Informações de contato</legend>
-
-            <div class="row">
-                <label>LinkdIn:</label>
-                <input type="text"></input>
-                <label>GitHub:</label>
-                <input type="text"></input>
-            </div>
+            <legend>Mensagem</legend>
+            <p>Escreva aqui sua mensagem pra gente! O mais breve possível retornaremos seu contato!</p>
+            <textarea></textarea>
         </fieldset>
         <div class="row">
-            <button type="reset">Limpar</button>
-            <button type="submit">Enviar</button>
+            <button type="reset">Limpar dados preenchidos</button>
+            <button type="submit">Enviar e aguardar retorno 🐾 </button>
         </div>
-
-
     </form>
             </div>
-    
             <div class="footer">
                 <p>
                     <font color="white" size="3">
@@ -113,8 +102,6 @@
                     </font>
                 </p>
                 <font color="white"><p>© 2025 Clínica Vida Animal. Todos os direitos reservados.</p></font>
-
-
             </div>
         </div>
     </div>
