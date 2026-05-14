@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Clínica Vida Animal | Contato</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
-            <font color="white">
-                <h2> Informações</h2>
-            </font>
+            <h2> Informações</h2>
             <ul>
                 <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre.html">A Clínica</a></li>
@@ -23,44 +21,40 @@
 
         <div class="main">
             <div class="header">
-                    <img src="../assets/images/logo.png" alt="Logo da Clínica Veterinária Vida Animal" width="150">
-                    <h1>
-                        <font face="Tahoma" color="white" size="5">
-                            Clínica Veterinária Vida Animal
-                        </font>    
-                    </h1>                               
-                    <img src="../assets/images/whatsApp.png" alt="Símbolo do WhatsApp" width="160">
-                    <img src="../assets/images/email.png" alt="Desenho de uma carta" width="150">
+                    <img src="../assets/images/logo.png" alt="Logo da Clínica Veterinária Vida Animal">
+                    <h1>Clínica Veterinária Vida Animal</h1>                               
+                    <img src="../assets/images/whatsApp.png" alt="Símbolo do WhatsApp">
+                    <img src="../assets/images/email.png" alt="Desenho de uma carta">
             </div>
     
             <div class="content">
                 <h1>Agende uma Consulta ou Fale Conosco</h1>
                 <p><span>🐾</span> Na Clínica Veterinária Vida Animal, estamos sempre prontos para cuidar do seu pet com todo carinho e atenção que ele merece</p>  
                 <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível para confirmar o agendamento ou responder sua mensagem.</p>
-                <p>Se preferir, você também pode falar diretamente conosco pelo <a href="https://wa.me/14039765341">WhatsApp </a>ou <a href="tel:+1407395445">telefone.</a></p>
-                <form>
+                <p>Se preferir, você também pode falar diretamente conosco pelo <a href="https://wa.me/14071236547">WhatsApp </a>ou <a href="tel:+14071236547">telefone.</a></p>
+                <form action="#" method="POST">
                     <fieldset>
                         <legend>Dados do tutor</legend>
                         <div class="row">
                             <label>Nome*:</label>
-                            <input type="text" required></input>
+                            <input type="text" name="tutor_name" required/>
                             <label>E-mail*:</label>
-                            <input type="email" required></input>
+                            <input type="email" name="tutor_email" required/>
                         </div>
                         <div class="row">
                             <label>Telefone:</label>
-                            <input type="tel"></input>
+                            <input type="tel" name="tutor_phone"/>
                             <label>WhatsApp:</label>
-                            <input type="text"></input>
+                            <input type="text" name="tutor_whatsapp"/>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Dados do pet</legend>
                         <div class="row">
                             <label>Nome*:</label>
-                            <input type="text" required></input>
+                            <input type="text" name="pet_name" required/>
                             <label>Espécie*:</label>
-                            <select required>
+                            <select name="pet_species" required>
                                 <option value="" disabled selected> Selecione a espécie</option>
                                 <option value="cachorro" > Cachorro</option>
                                 <option value="gato" > Gato</option>
@@ -69,41 +63,31 @@
                         </div>
                         <div class="row">
                             <label>Raça (opcional):</label>
-                            <input type="text"></input>
+                            <input type="text" name="pet_breed"/>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Mensagem</legend>
                         <p>Escreva aqui sua mensagem pra gente! O mais breve possível retornaremos seu contato!</p>
-                        <textarea></textarea>
+                        <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
                     </fieldset>
                     <div class="row">
-                        <button type="reset">Limpar dados preenchidos</button>
+                        <button type="reset">Limpar dados</button>
                         <button type="submit">Enviar e aguardar retorno 🐾 </button>
                     </div>
                 </form>
                 <h3> Emergências</h3>
                 <p> Em caso de emergência <strong>dirija-se</strong> diretamente para a nossa clínica!</p>              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28038.017618802958!2d-81.2513258256836!3d28.547166999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e766495f2e1a15%3A0xc5bb809a9d91c59!2sWaterford%20Lakes%20Animal%20Hospital!5e0!3m2!1spt-BR!2sus!4v1762181725966!5m2!1spt-BR!2sus" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28038.017618802958!2d-81.2513258256836!3d28.547166999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e766495f2e1a15%3A0xc5bb809a9d91c59!2sWaterford%20Lakes%20Animal%20Hospital!5e0!3m2!1spt-BR!2sus!4v1762181725966!5m2!1spt-BR!2sus" style="width: 100%; max-width: 900px; height: 450px; border:0;" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="footer">
-                <p>
-                    <font color="white" size="3">
-                        <span>📍</span><b>Endereço:</b> Rua das Flores, 125 - Centro, Orlando, FL
-                    </font>
-                </p>
-                <p>
-                    <font color="white" size="3">
-                        <span>📞 </span><b>Telefone:</b> (407) 123-4567
-                        <span>📱 </span><b>WhatsApp:</b> (407) 123-6547
-                    </font>
-                </p>
-                <p>
-                    <font color="white" size="3">
-                        <span>📧 </span><b>E-mail:</b> contato@vidaanimal.com
-                    </font>
-                </p>
-                <font color="white"><p>© 2025 Clínica Vida Animal. Todos os direitos reservados.</p></font>
+                <p>📍 <b>Endereço:</b> Rua das Flores, 125 - Centro, Orlando, FL</p>
+                <p>📞 <b>Telefone:</b> <a href="tel:+14071234567">(407) 123-4567</a>  
+                <p>📱 <b>WhatsApp:</b> <a href="https://wa.me/14071236547">(407) 123-6547</a></p>
+                <p>📧 <b>E-mail:</b> <a href="mailto:contato@vidaanimal.com">contato@vidaanimal.com</a></p>
+                <p>⏰ <b>Horário:</b> Seg-Sex 08h-19h | Sáb 08h-14h</p>
+                <hr>
+                <p>&copy; 2025 Clínica Veterinária Vida Animal - Todos os direitos reservados.</p>
             </div>
         </div>
     </div>
