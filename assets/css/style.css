@@ -36,7 +36,6 @@ header {
   height: 150px;
   background-color: var(--background-dark);
   padding: 20px;
-  background-color: var(--background-dark);
   color: var(--background-light);
   border-bottom: 3px solid #e0e0e0;
 }
@@ -47,7 +46,7 @@ header img {
 
 header h1 {
   font-size: 2.5em;
-  color: var(--title-light);
+  color: var(--font-light);
 }
 .header {
   display: flex;
@@ -60,9 +59,10 @@ header h1 {
   top: 150px;
   left: 0;
   width: 220px;
-  height: 100vh;
+  height: calc(100vh - 150px);
   background-color: var(--background-dark);
   padding: 20px;
+  overflow-y: auto;
 }
 
 .menu h2 {
@@ -130,16 +130,17 @@ blockquote {
   text-align: justify;
   line-height: 1.25;
 }
-
 .text-right img {
   float: right;
   margin: 5px 0px 10px 30px;
+  max-width: 250px;
   width: 23%;
   height: auto;
 }
 .text-left img {
   float: left;
   margin: 5px 30px 10px 0px;
+  max-width: 250px;
   width: 23%;
   height: auto;
 }
@@ -234,4 +235,19 @@ footer {
 footer a {
   color: var(--title-dark);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu, main, footer {
+    margin-left: 0;
+  }
+  .menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  main {
+    margin-top: 0;
+  }
 }
