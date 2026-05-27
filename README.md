@@ -72,5 +72,4 @@ This project was created to improve skills in:
 
 Developed by Larissa Gatto
 
-GitHub:
-:contentReference[oaicite:0]{index=0}
+GitHub:https://github.com/Larissangatto
