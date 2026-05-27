@@ -26,8 +26,8 @@
         </ul>
     </nav>   
         <main>
-            <section class="content">
-                <h1>Agende uma Consulta ou Fale Conosco</h1>
+            <section class="contact">
+                <h2>Agende uma Consulta ou Fale Conosco</h2>
                 <p><span>🐾</span> Na Clínica Veterinária Vida Animal, estamos sempre prontos para cuidar do seu pet com todo carinho e atenção que ele merece</p>  
                 <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível para confirmar o agendamento ou responder sua mensagem.</p>
                 <p>Se preferir, você também pode falar diretamente conosco pelo <a href="https://wa.me/14071236547">WhatsApp </a>ou <a href="tel:+14071236547">telefone.</a></p>
@@ -35,34 +35,48 @@
                     <fieldset>
                         <legend>Dados do tutor</legend>
                         <div class="row">
-                            <label>Nome*:</label>
-                            <input type="text" name="tutor_name" required/>
-                            <label>E-mail*:</label>
-                            <input type="email" name="tutor_email" required/>
+                            <div class="input">
+                                <label>Nome*:</label>
+                                <input type="text" name="tutor_name" required/>
+                            </div>
+                            <div class="input">    
+                                <label>E-mail*:</label>
+                                <input type="email" name="tutor_email" required/>
+                            </div>
                         </div>
                         <div class="row">
-                            <label>Telefone:</label>
-                            <input type="tel" name="tutor_phone"/>
-                            <label>WhatsApp:</label>
-                            <input type="text" name="tutor_whatsapp"/>
+                            <div class="input">    
+                                <label>Telefone:</label>
+                                <input type="tel" name="tutor_phone"/>
+                            </div>
+                            <div class="input">    
+                                <label>WhatsApp:</label>
+                                <input type="text" name="tutor_whatsapp"/>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Dados do pet</legend>
                         <div class="row">
-                            <label>Nome*:</label>
-                            <input type="text" name="pet_name" required/>
-                            <label>Espécie*:</label>
-                            <select name="pet_species" required>
-                                <option value="" disabled selected> Selecione a espécie</option>
-                                <option value="cachorro" > Cachorro</option>
-                                <option value="gato" > Gato</option>
-                                <option value="outro" > Outro</option>
-                            </select>
+                            <div class="input">    
+                                <label>Nome*:</label>
+                                <input type="text" name="pet_name" required/>
+                            </div>
+                            <div class="input">    
+                                <label>Espécie*:</label>
+                                <select name="pet_species" required>
+                                    <option value="" disabled selected> Selecione a espécie</option>
+                                    <option value="cachorro" > Cachorro</option>
+                                    <option value="gato" > Gato</option>
+                                    <option value="outro" > Outro</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="row">
-                            <label>Raça (opcional):</label>
-                            <input type="text" name="pet_breed"/>
+                            <div class="input">    
+                                <label>Raça (opcional):</label>
+                                <input type="text" name="pet_breed"/>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset>
@@ -70,14 +84,17 @@
                         <p>Escreva aqui sua mensagem pra gente! O mais breve possível retornaremos seu contato!</p>
                         <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
                     </fieldset>
-                    <div class="row">
+                    <div id="button">
                         <button type="reset">Limpar dados</button>
                         <button type="submit">Enviar e aguardar retorno 🐾 </button>
                     </div>
                 </form>
-                <h3> Emergências</h3>
-                <p> Em caso de emergência <strong>dirija-se</strong> diretamente para a nossa clínica!</p>              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28038.017618802958!2d-81.2513258256836!3d28.547166999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e766495f2e1a15%3A0xc5bb809a9d91c59!2sWaterford%20Lakes%20Animal%20Hospital!5e0!3m2!1spt-BR!2sus!4v1762181725966!5m2!1spt-BR!2sus" style="width: 100%; max-width: 900px; height: 450px; border:0;" allowfullscreen loading="lazy"></iframe>
+                <div class="map">
+                    <h3> Emergências</h3>
+                    <p> Em caso de emergência <strong>dirija-se</strong> diretamente para a nossa clínica!</p>              
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28038.017618802958!2d-81.2513258256836!3d28.547166999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e766495f2e1a15%3A0xc5bb809a9d91c59!2sWaterford%20Lakes%20Animal%20Hospital!5e0!3m2!1spt-BR!2sus!4v1762181725966!5m2!1spt-BR!2sus" style="width: 100%; max-width: 900px; height: 450px; border:0;" allowfullscreen loading="lazy"></iframe>
+                    
+                </div>
             </section>
         </main>
         <footer>
